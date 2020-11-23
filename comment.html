@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width-device-width,initial-scale=1.0">
+        <title>Comment area</title>
+        <link rel="stylesheet" href="blich.css">
+
+    
+    </head>
+    <body>
+        <h1>Comment Area</h1>
+        <form id="contactForm" action="index.html"> 
+            <fieldset> 
+                <legend>Comments</legend> 
+            <span>Name : </span><input placeholder="Enter your name..." id="name" required type="text"><br>
+            <span>Email : </span><input placeholder="Enter your email..." id="email" required type="text"><br>
+            <span>Your Message : <br></span><textarea id="message" name="comments" >Enter your comments</textarea>
+            <br>
+            <button id="btn" type="submit" onclick="sendMesssage()">Submit</button>
+        </fieldset>
+        </form>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+<script src="wc.js"></script>
+    </body>
+</html>
